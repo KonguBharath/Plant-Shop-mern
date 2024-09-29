@@ -1,26 +1,44 @@
-import './App.css';
+import { Col, Container, Navbar, Row } from 'react-bootstrap';
 import { sampleProducts } from './data';
 
 function App() {
   return (
-    <div>
-      <header>Nature's Breeze</header>
+    <div className="d-flex flex-column vh-100">
+      <header>
+        <Navbar expand="lg" className="navBar">
+          <Container>
+            <Navbar.Brand>Nature's Breeze</Navbar.Brand>
+          </Container>
+          <nav className="d-flex">
+            <a href="/cart" className="nav-link">
+              Cart
+            </a>
+            <a href="/signin" className="nav-link">
+              SignIn
+            </a>
+          </nav>
+        </Navbar>
+      </header>
       <main>
-        <ul>
-          {sampleProducts.map((Product) => (
-            <li key={Product.slug}>
-              <img
-                src={Product.image}
-                alt={Product.name}
-                className="product-image"
-              />
-              <h2>{Product.name}</h2>
-              <p>{Product.price}</p>
-            </li>
-          ))}
-        </ul>
+        <Container className="mt-3">
+          <Row>
+            {sampleProducts.map((Product) => (
+              <Col key={Product.slug} sm={6} md={4} lg={3}>
+                <img
+                  src={Product.image}
+                  alt={Product.name}
+                  className="product-image"
+                />
+                <h2>{Product.name}</h2>
+                <p>{Product.price}</p>
+              </Col>
+            ))}
+          </Row>
+        </Container>
       </main>
-      <footer>All rights reserved to Nature's Breeze</footer>
+      <div className="text-center">
+        <footer>All rights reserved to Nature's Breeze</footer>
+      </div>
     </div>
   );
 }
