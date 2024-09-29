@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+
+.product-image {
+  max-height: 100px;
+  max-width: 100px;
+  width: 100%;
+}
