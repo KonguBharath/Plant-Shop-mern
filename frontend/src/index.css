@@ -31,3 +31,7 @@
 .navBar .nav-link:hover {
   color: grey !important; /* Optional: Change color on hover */
 }
+
+.rating span {
+  color: green;
+}
