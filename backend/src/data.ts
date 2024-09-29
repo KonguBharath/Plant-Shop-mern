@@ -4,7 +4,7 @@ export const sampleProducts: Product[] = [
   {
     name: 'plant1',
     slug: 'plant1',
-    image: './p_img/p1.jpg',
+    image: './p_image/p1.jpg',
     categories: 'sacullent',
     brand: 'NB',
     price: 350,
@@ -16,7 +16,7 @@ export const sampleProducts: Product[] = [
   {
     name: 'plant2',
     slug: 'plant2',
-    image: './p_img/p2.jpg',
+    image: './p_image/p2.jpg',
     categories: 'sacullent',
     brand: 'NB',
     price: 350,
@@ -28,7 +28,7 @@ export const sampleProducts: Product[] = [
   {
     name: 'plant3',
     slug: 'plant3',
-    image: './p_img/p3.jpg',
+    image: './p_image/p3.jpg',
     categories: 'sacullent',
     brand: 'NB',
     price: 350,
@@ -40,7 +40,7 @@ export const sampleProducts: Product[] = [
   {
     name: 'plant4',
     slug: 'plant4',
-    image: './p_img/p4.jpg',
+    image: './p_image/p4.jpg',
     categories: 'sacullent',
     brand: 'NB',
     price: 350,
@@ -52,7 +52,7 @@ export const sampleProducts: Product[] = [
   {
     name: 'plant5',
     slug: 'plant5',
-    image: './p_img/p5.png',
+    image: './p_image/p5.png',
     categories: 'sacullent',
     brand: 'NB',
     price: 350,
@@ -64,7 +64,7 @@ export const sampleProducts: Product[] = [
   {
     name: 'plant6',
     slug: 'plant6',
-    image: './p_img/p6.png',
+    image: './p_image/p6.png',
     categories: 'sacullent',
     brand: 'NB',
     price: 350,
@@ -76,7 +76,7 @@ export const sampleProducts: Product[] = [
   {
     name: 'plant7',
     slug: 'plant7',
-    image: './p_img/p7.png',
+    image: './p_image/p7.png',
     categories: 'sacullent',
     brand: 'NB',
     price: 350,
@@ -88,7 +88,7 @@ export const sampleProducts: Product[] = [
   {
     name: 'plant8',
     slug: 'plant8',
-    image: './p_img/p8.jpg',
+    image: './p_image/p8.jpg',
     categories: 'sacullent',
     brand: 'NB',
     price: 350,
@@ -100,7 +100,7 @@ export const sampleProducts: Product[] = [
   {
     name: 'plant9',
     slug: 'plant9',
-    image: './p_img/p9.jpg',
+    image: './p_image/p9.jpg',
     categories: 'sacullent',
     brand: 'NB',
     price: 350,
@@ -112,7 +112,7 @@ export const sampleProducts: Product[] = [
   {
     name: 'plant10',
     slug: 'plant10',
-    image: './p_img/p10.png',
+    image: './p_image/p10.png',
     categories: 'sacullent',
     brand: 'NB',
     price: 350,
@@ -124,7 +124,7 @@ export const sampleProducts: Product[] = [
   {
     name: 'plant11',
     slug: 'plant11',
-    image: './p_img/p11.jpg',
+    image: './p_image/p11.jpg',
     categories: 'sacullent',
     brand: 'NB',
     price: 350,
@@ -136,7 +136,7 @@ export const sampleProducts: Product[] = [
   {
     name: 'plant12',
     slug: 'plant12',
-    image: './p_img/p12.jpg',
+    image: './p_image/p12.jpg',
     categories: 'sacullent',
     brand: 'NB',
     price: 350,
@@ -148,7 +148,7 @@ export const sampleProducts: Product[] = [
   {
     name: 'plant13',
     slug: 'plant13',
-    image: './p_img/p13.png',
+    image: './p_image/p13.png',
     categories: 'sacullent',
     brand: 'NB',
     price: 350,
@@ -160,7 +160,7 @@ export const sampleProducts: Product[] = [
   {
     name: 'plant14',
     slug: 'plant14',
-    image: './p_img/p14.png',
+    image: './p_image/p14.png',
     categories: 'sacullent',
     brand: 'NB',
     price: 350,
@@ -172,7 +172,7 @@ export const sampleProducts: Product[] = [
   {
     name: 'plant15',
     slug: 'plant15',
-    image: './p_img/p15.jpg',
+    image: './p_image/p15.jpg',
     categories: 'sacullent',
     brand: 'NB',
     price: 350,
@@ -184,7 +184,7 @@ export const sampleProducts: Product[] = [
   {
     name: 'plant16',
     slug: 'plant16',
-    image: './p_img/p16.jpg',
+    image: './p_image/p16.jpg',
     categories: 'sacullent',
     brand: 'NB',
     price: 350,
@@ -196,7 +196,7 @@ export const sampleProducts: Product[] = [
   {
     name: 'plant17',
     slug: 'plant17',
-    image: './p_img/p17.jpg',
+    image: './p_image/p17.jpg',
     categories: 'sacullent',
     brand: 'NB',
     price: 350,
@@ -208,7 +208,7 @@ export const sampleProducts: Product[] = [
   {
     name: 'plant18',
     slug: 'plant18',
-    image: './p_img/p18.jpg',
+    image: './p_image/p18.jpg',
     categories: 'sacullent',
     brand: 'NB',
     price: 350,
@@ -220,7 +220,7 @@ export const sampleProducts: Product[] = [
   {
     name: 'plant19',
     slug: 'plant19',
-    image: './p_img/p19.png',
+    image: './p_image/p19.png',
     categories: 'sacullent',
     brand: 'NB',
     price: 350,
@@ -232,7 +232,7 @@ export const sampleProducts: Product[] = [
   {
     name: 'plant20',
     slug: 'plant20',
-    image: './p_img/p20.jpg',
+    image: './p_image/p20.jpg',
     categories: 'sacullent',
     brand: 'NB',
     price: 350,
@@ -244,7 +244,7 @@ export const sampleProducts: Product[] = [
   {
     name: 'plant21',
     slug: 'plant21',
-    image: './p_img/p21.jpg',
+    image: './p_image/p21.jpg',
     categories: 'sacullent',
     brand: 'NB',
     price: 350,

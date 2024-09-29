@@ -38,4 +38,4 @@ const PORT = 4000
 app.listen(PORT, () => {
 console.log(`server started at http://localhost:${PORT}`)
 })
-4.npm start
+4.npm run build => on the back end to convert ts files in to js files

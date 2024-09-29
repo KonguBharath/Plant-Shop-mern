@@ -27,6 +27,9 @@
   color: white !important; /* Set the link text color to black */
   margin-right: 15px;
 }
+.navBar .dark_button {
+  margin-left: 15px; /* Optional: Add margin for the button */
+}
 
 .navBar .nav-link:hover {
   color: grey !important; /* Optional: Change color on hover */
@@ -34,4 +37,7 @@
 
 .rating span {
   color: green;
+}
+img.large {
+  max-width: 100%;
 }
