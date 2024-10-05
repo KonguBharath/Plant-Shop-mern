@@ -1,4 +1,6 @@
-import { Product } from './types/Product';
+import { User } from './models/userModel';
+import { Product } from './models/productModel';
+import bcrypt from 'bcryptjs';
 
 export const sampleProducts: Product[] = [
   {
@@ -12,6 +14,8 @@ export const sampleProducts: Product[] = [
     description: 'dry plant, no watering, weather tolerant, zero maintenance',
     rating: 4.5,
     numReviews: 3,
+    images: [],
+    isFeatured: false,
   },
   {
     name: 'plant2',
@@ -24,6 +28,8 @@ export const sampleProducts: Product[] = [
     description: 'dry plant, no watering, weather tolerant, zero maintenance',
     rating: 4.5,
     numReviews: 3,
+    images: [],
+    isFeatured: false,
   },
   {
     name: 'plant3',
@@ -36,6 +42,8 @@ export const sampleProducts: Product[] = [
     description: 'dry plant, no watering, weather tolerant, zero maintenance',
     rating: 4.5,
     numReviews: 3,
+    images: [],
+    isFeatured: false,
   },
   {
     name: 'plant4',
@@ -48,6 +56,8 @@ export const sampleProducts: Product[] = [
     description: 'dry plant, no watering, weather tolerant, zero maintenance',
     rating: 4.5,
     numReviews: 3,
+    images: [],
+    isFeatured: false,
   },
   {
     name: 'plant5',
@@ -60,6 +70,8 @@ export const sampleProducts: Product[] = [
     description: 'dry plant, no watering, weather tolerant, zero maintenance',
     rating: 4.5,
     numReviews: 3,
+    images: [],
+    isFeatured: false,
   },
   {
     name: 'plant6',
@@ -72,6 +84,8 @@ export const sampleProducts: Product[] = [
     description: 'dry plant, no watering, weather tolerant, zero maintenance',
     rating: 4.5,
     numReviews: 3,
+    images: [],
+    isFeatured: false,
   },
   {
     name: 'plant7',
@@ -84,6 +98,8 @@ export const sampleProducts: Product[] = [
     description: 'dry plant, no watering, weather tolerant, zero maintenance',
     rating: 4.5,
     numReviews: 3,
+    images: [],
+    isFeatured: false,
   },
   {
     name: 'plant8',
@@ -96,6 +112,8 @@ export const sampleProducts: Product[] = [
     description: 'dry plant, no watering, weather tolerant, zero maintenance',
     rating: 4.5,
     numReviews: 3,
+    images: [],
+    isFeatured: false,
   },
   {
     name: 'plant9',
@@ -108,6 +126,8 @@ export const sampleProducts: Product[] = [
     description: 'dry plant, no watering, weather tolerant, zero maintenance',
     rating: 4.5,
     numReviews: 3,
+    images: [],
+    isFeatured: false,
   },
   {
     name: 'plant10',
@@ -120,6 +140,8 @@ export const sampleProducts: Product[] = [
     description: 'dry plant, no watering, weather tolerant, zero maintenance',
     rating: 4.5,
     numReviews: 3,
+    images: [],
+    isFeatured: false,
   },
   {
     name: 'plant11',
@@ -132,6 +154,8 @@ export const sampleProducts: Product[] = [
     description: 'dry plant, no watering, weather tolerant, zero maintenance',
     rating: 4.5,
     numReviews: 3,
+    images: [],
+    isFeatured: false,
   },
   {
     name: 'plant12',
@@ -144,6 +168,8 @@ export const sampleProducts: Product[] = [
     description: 'dry plant, no watering, weather tolerant, zero maintenance',
     rating: 4.5,
     numReviews: 3,
+    images: [],
+    isFeatured: false,
   },
   {
     name: 'plant13',
@@ -156,6 +182,8 @@ export const sampleProducts: Product[] = [
     description: 'dry plant, no watering, weather tolerant, zero maintenance',
     rating: 4.5,
     numReviews: 3,
+    images: [],
+    isFeatured: false,
   },
   {
     name: 'plant14',
@@ -168,6 +196,8 @@ export const sampleProducts: Product[] = [
     description: 'dry plant, no watering, weather tolerant, zero maintenance',
     rating: 4.5,
     numReviews: 3,
+    images: [],
+    isFeatured: false,
   },
   {
     name: 'plant15',
@@ -180,6 +210,8 @@ export const sampleProducts: Product[] = [
     description: 'dry plant, no watering, weather tolerant, zero maintenance',
     rating: 4.5,
     numReviews: 3,
+    images: [],
+    isFeatured: false,
   },
   {
     name: 'plant16',
@@ -192,6 +224,8 @@ export const sampleProducts: Product[] = [
     description: 'dry plant, no watering, weather tolerant, zero maintenance',
     rating: 4.5,
     numReviews: 3,
+    images: [],
+    isFeatured: false,
   },
   {
     name: 'plant17',
@@ -204,6 +238,8 @@ export const sampleProducts: Product[] = [
     description: 'dry plant, no watering, weather tolerant, zero maintenance',
     rating: 4.5,
     numReviews: 3,
+    images: [],
+    isFeatured: false,
   },
   {
     name: 'plant18',
@@ -216,6 +252,8 @@ export const sampleProducts: Product[] = [
     description: 'dry plant, no watering, weather tolerant, zero maintenance',
     rating: 4.5,
     numReviews: 3,
+    images: [],
+    isFeatured: false,
   },
   {
     name: 'plant19',
@@ -228,6 +266,8 @@ export const sampleProducts: Product[] = [
     description: 'dry plant, no watering, weather tolerant, zero maintenance',
     rating: 4.5,
     numReviews: 3,
+    images: [],
+    isFeatured: false,
   },
   {
     name: 'plant20',
@@ -240,6 +280,8 @@ export const sampleProducts: Product[] = [
     description: 'dry plant, no watering, weather tolerant, zero maintenance',
     rating: 4.5,
     numReviews: 3,
+    images: [],
+    isFeatured: false,
   },
   {
     name: 'plant21',
@@ -252,5 +294,22 @@ export const sampleProducts: Product[] = [
     description: 'dry plant, no watering, weather tolerant, zero maintenance',
     rating: 4.5,
     numReviews: 3,
+    images: [],
+    isFeatured: false,
+  },
+];
+
+export const sampleUsers: User[] = [
+  {
+    name: 'bharathviswa',
+    email: 'admin@example.com',
+    password: bcrypt.hashSync('123456'),
+    isAdmin: true,
+  },
+  {
+    name: 'user1',
+    email: 'user@example.com',
+    password: bcrypt.hashSync('123456'),
+    isAdmin: false,
   },
 ];

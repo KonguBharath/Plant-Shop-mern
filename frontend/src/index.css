@@ -45,3 +45,7 @@ img.large {
 img.thumnail {
   height: 80%;
 }
+
+.small-container {
+  max-width: 600px;
+}

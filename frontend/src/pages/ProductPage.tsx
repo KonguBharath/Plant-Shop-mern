@@ -7,7 +7,6 @@ import { ApiError } from '../types/ApiError';
 import { Badge, Button, Card, Col, ListGroup, Row } from 'react-bootstrap';
 import { Helmet } from 'react-helmet-async';
 import Rating from '../components/Rating';
-import { sampleProducts } from '../data';
 import { useContext } from 'react';
 import { Store } from '../Store';
 import { toast } from 'react-toastify';
